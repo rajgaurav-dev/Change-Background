@@ -1,6 +1,6 @@
 import torch
 from diffusers import StableDiffusionInpaintPipeline
-from .config import MODEL_ID, DEVICE, DTYPE
+from config import MODEL_ID, DEVICE, DTYPE
 
 def load_pipeline():
     pipe = StableDiffusionInpaintPipeline.from_pretrained(
